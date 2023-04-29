@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="scene">
+    <div id="sun">
+    </div>
+</div>
+<script>
+  const beamCount = 33;
+  const sun = document.getElementById('sun');
+  for (let i = 0; i < beamCount; i++) {
+    const beam = document.createElement('div');
+    beam.classList.add('beam');
+    beam.style = `--beam-rotate: ${i * 360/beamCount}deg; --beam-index: ${i}`;
+    sun.appendChild(beam);
+  }
+</script>
+</body>
+</html>
+
