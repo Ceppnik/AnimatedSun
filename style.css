@@ -25,7 +25,7 @@ body {
   top: 300px;
   left: 0;
   transform-origin: 50vw 80vh;
-  animation: sunRoation 10s infinite ease-in-out;
+  animation: sunRotation 10s infinite ease-in-out;
 }
 
 .beam {
